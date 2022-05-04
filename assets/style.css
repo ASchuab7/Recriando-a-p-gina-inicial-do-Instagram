@@ -1,0 +1,196 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: rgb(243, 243, 243);
+    width: 100%;
+    min-width: 100vh;
+    font-size: 14px;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 100vh;
+}
+
+#celular{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+#celular img{
+    margin-top: 2rem;
+    height: 39rem;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    min-height: 37rem;
+    justify-content: space-around;
+    width: 40%;
+    margin-top: 5rem;
+} 
+
+.logar{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #fff;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.3rem 0;
+    border: 1px solid lightgray;
+}
+
+.logar:nth-child(1){
+    min-height: 21rem;
+}
+
+.instagrm-logo{
+    width: 65%;
+}
+
+
+.foto-perfil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.foto-perfil img{
+    height: 5rem;
+}
+
+.login{
+    background-color:  #0095f6;
+    color: #fff;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.logout{
+    color: #0095f6;
+    margin-top: 1rem;
+}
+
+.mudar{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.3rem 0;
+    border: 1px solid lightgray;
+}
+
+.mudar p{
+    color: rgb(160, 160, 160);
+}
+
+.mudar a{
+    color: #0095f6;
+}
+
+.container-buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.3rem 0;
+    width: 100%;
+}
+
+.buttons{
+    justify-content: space-evenly;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+}
+
+.buttons img{
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+.rodape{
+    display: flex;
+    max-width: 130rem;
+    margin-top: 3rem;
+    margin-left: 7rem;
+    margin-right: 7rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: rgb(160, 160, 160);
+    font-size: 12px;
+}
+
+.rodape-items{
+    padding: 0.5rem;
+}
+
+.rodape-items a{
+    color:rgb(160, 160, 160)
+}
+
+.final{
+    display: flex;
+    font-size: 12px;
+    margin-left: 21rem;
+}
+
+.final-items{
+    padding: 1rem;
+    color: rgb(160, 160, 160);
+    align-items: center;
+}
+
+.final-items a{
+    color: rgb(160, 160, 160);
+}
+
+
+@media (max-width: 1024px) {
+    .flex-container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+    body {
+        background-color: #fff;
+    }
+
+    .flex-container {
+        width: 90%;
+    }
+
+    .celular {
+        display: none;
+    }
+
+    .container {
+        width: 100%;
+    }
+    
+    .logar {
+        border: 1px solid transparent;
+    }
+}
